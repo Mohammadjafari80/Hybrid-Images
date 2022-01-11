@@ -52,12 +52,12 @@ Here are the frequency domains of Harry and Voldemort!
 
 <div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <img src='./images/Harry-dft.jpg' style="width:100%">
         <h2 style="padding:20px; "> Harry </h2>
+        <img src='./images/Harry-dft.jpg' style="width:100%">
     </div>
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <img src='./images/Voldemort-dft.jpg' style="width:100%;">
         <h2 style="padding:20px; "> Voldemort </h2>
+        <img src='./images/Voldemort-dft.jpg' style="width:100%;">
     </div>
 </div>
 
@@ -84,12 +84,12 @@ Here are the results for Gaussian High Pass and Gaussian Low Pass mask:
 
 <div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <img src='./images/Harry-highpass.jpg' style="width:100%">
         <h2 style="padding:20px; "> Harry </h2>
+        <img src='./images/Harry-highpass.jpg' style="width:100%">
     </div>
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <img src='./images/Voldemort-lowpass.jpg' style="width:100%;">
         <h2 style="padding:20px; "> Voldemort </h2>
+        <img src='./images/Voldemort-lowpass.jpg' style="width:100%;">
     </div>
 </div>
 
@@ -98,12 +98,12 @@ If we apply these masks to them we acheive these results:
 
 <div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <img src='./images/Harry-highpassed.jpg' style="width:100%">
         <h2 style="padding:20px; "> Harry </h2>
+        <img src='./images/Harry-highpassed.jpg' style="width:100%">
     </div>
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <img src='./images/Voldemort-lowpassed.jpg' style="width:100%;">
         <h2 style="padding:20px; "> Voldemort </h2>
+        <img src='./images/Voldemort-lowpassed.jpg' style="width:100%;">
     </div>
 </div>
 
@@ -114,8 +114,8 @@ Here is the _Combined DFT_:
 
 <div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <img src='./images/Combined-dft.jpg' style="width:100%">
         <h2 style="padding:20px; "> Combined DFT </h2>
+        <img src='./images/Combined-dft.jpg' style="width:100%">
     </div>
 </div>
 
@@ -127,8 +127,8 @@ Here is the final merged result:
 
 <div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
+         <h2 style="padding:20px; "> Hybrid </h2>
         <img src='./images/Hybrid.jpg' style="width:100%">
-        <h2 style="padding:20px; "> Hybrid </h2>
     </div>
 </div>
 

@@ -5,18 +5,18 @@ According to Wikipedia, a hybrid image is an image perceived in one of two diffe
 Here are some examples:
 
 <div  style="display: flex; align-items: flex-start; flex-direction: column; justify-content:space-evenly; width=100%;">
-<div style="display: flex; align-items: center; justify-content: space-evenly; margin:15px; width:100%;">
+<p align='center' style="display: flex; align-items: center; justify-content: space-evenly; margin:15px; width:100%;">
     <img src='./images/example-1.jpg' width='55%'>
     <img src='./images/example-1.jpg', width='15%'>
-</div>
-<div style="display: flex; align-items: center; justify-content: space-evenly; margin:15px; width:100%;">
+</p>
+<p align='center' style="display: flex; align-items: center; justify-content: space-evenly; margin:15px; width:100%;">
     <img src='./images/example-2.jpg' width='55%'>
     <img src='./images/example-2.jpg', width='15%'>
-</div>
-<div style="display: flex; align-items: center; justify-content: space-evenly; margin:15px; width:100%;">
+</p>
+<p align='center' style="display: flex; align-items: center; justify-content: space-evenly; margin:15px; width:100%;">
     <img src='./images/example-3.jfif' width='55%'>
     <img src='./images/example-3.jfif', width='15%'>
-</div>
+</p>
 </div>
 <br />
 <br/>

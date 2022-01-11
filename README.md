@@ -50,15 +50,9 @@ Now that we aligned images adequately, we get to the main section. We must conve
 Here are the frequency domains of Harry and Voldemort!
 <br/>
 
-<p align='center style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
-    <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <h2 style="padding:20px; "> Harry </h2>
-        <img src='./images/Harry-dft.jpg' style="width:100%">
-    </div>
-    <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <h2 style="padding:20px; "> Voldemort </h2>
-        <img src='./images/Voldemort-dft.jpg' style="width:100%;">
-    </div>
+<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+        <img src='./images/Harry-dft.jpg' style="width:40%">
+        <img src='./images/Voldemort-dft.jpg' style="width:40%;">
 </p>
 
 The next step is to separate high frequencies from **Harry** and low frequencies from **Voldemort**. We use a Gaussian Filter to achieve a softer final result.

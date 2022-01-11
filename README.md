@@ -82,30 +82,21 @@ Here are the results for Gaussian High Pass and Gaussian Low Pass mask:
 <br/>
 <br/>
 
-<div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
-    <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <h2 style="padding:20px; "> Harry </h2>
-        <img src='./images/Harry-highpass.jpg' style="width:100%">
-    </div>
-    <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <h2 style="padding:20px; "> Voldemort </h2>
-        <img src='./images/Voldemort-lowpass.jpg' style="width:100%;">
-    </div>
-</div>
+<<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+<img src='./images/Harry-highpass.jpg' style="width:40%">
+<img src='./images/Voldemort-lowpass.jpg' style="width:40%;">
+
+</p>
 
 If we apply these masks to them we acheive these results:
 <br/>
 
-<div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
-    <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <h2 style="padding:20px; "> Harry </h2>
-        <img src='./images/Harry-highpassed.jpg' style="width:100%">
-    </div>
-    <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <h2 style="padding:20px; "> Voldemort </h2>
-        <img src='./images/Voldemort-lowpassed.jpg' style="width:100%;">
-    </div>
-</div>
+<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+<img src='./images/Harry-highpassed.jpg' style="width:40%">
+<img src='./images/Voldemort-lowpassed.jpg' style="width:40%;">
+</p>
+
+</p>
 
 If we add them weighted, we use this equation for this example.
 $$Hybird_f = 1.3 \times Harry_f + Voldemort_f$$
@@ -113,10 +104,7 @@ $$Hybird_f = 1.3 \times Harry_f + Voldemort_f$$
 Here is the _Combined DFT_:
 
 <div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
-    <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-        <h2 style="padding:20px; "> Combined DFT </h2>
-        <img src='./images/Combined-dft.jpg' style="width:100%">
-    </div>
+        <img src='./images/Combined-dft.jpg' style="width:60%">
 </div>
 
 If we transfer back this result to _Spatial Domain_, we should get a good result. I used numpy _ifft_ for this part.
@@ -126,16 +114,13 @@ Since every image has three channels called **RGB**, I split the channels, perfo
 Here is the final merged result:
 
 <div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
-    <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
-         <h2 style="padding:20px; "> Hybrid </h2>
-        <img src='./images/Hybrid.jpg' style="width:100%">
-    </div>
+        <img src='./images/Hybrid.jpg' style="width:60%">
 </div>
 
 If we look at it in different distances we will see a diiferent person in it.
 <br/>
 
-<div style="display: flex; align-items: center; justify-content: space-evenly; margin:15px; width:100%;">
+<p align='center' style="display: flex; align-items: center; justify-content: space-evenly; margin:15px; width:100%;">
     <img src='./images/Hybrid.jpg' width='55%'>
     <img src='./images/Hybrid.jpg', width='15%'>
-</div>
+</p>

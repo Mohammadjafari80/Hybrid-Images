@@ -27,10 +27,10 @@ So when we take low frequencies from one image, and we take high frequencies fro
 To work this out, we must transfer images to the frequency domain. The example we will work on is composed of these two images.
 <br />
 
-<div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
     <img src='./images/Harry.jpg' style="width:40%">
     <img src='./images/Voldemort.jpg' style="width:40%">
-</div>
+</p>
 
 <br />
 At first, we need to align these images. To do that, we use a **Transition+Scale** transformation. A good aligning point would be the eyes. So at the beginning of the program, it will ask you to click on the subject eyes in each image. After that, it will automatically generate the transformed results for you.
@@ -39,10 +39,10 @@ At first, we need to align these images. To do that, we use a **Transition+Scale
 Here are the transformed images:
 <br />
 <br/>
-<div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
     <img src='./images/Harry-transformed.jpg' style="width:40%">
     <img src='./images/Voldemort-transformed.jpg' style="width:40%">
-</div>
+</p>
 <br />
 Now that we aligned images adequately, we get to the main section. We must convert these images to their frequency domain using **Discrete Fourier Transform**. One way to achieve the same result faster is using the **Fast Fourier Transform**. I used NumPy _ff2_ function to transfer images to the frequency domain, and I used fftshift to transfer the low frequencies to the center of the images. 
 <br/>
@@ -50,7 +50,7 @@ Now that we aligned images adequately, we get to the main section. We must conve
 Here are the frequency domains of Harry and Voldemort!
 <br/>
 
-<div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+<p align='center style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
     <div style="display: flex; align-items: center; flex-direction: column; justify-content:space-evenly; width:40%;">
         <h2 style="padding:20px; "> Harry </h2>
         <img src='./images/Harry-dft.jpg' style="width:100%">
@@ -59,7 +59,7 @@ Here are the frequency domains of Harry and Voldemort!
         <h2 style="padding:20px; "> Voldemort </h2>
         <img src='./images/Voldemort-dft.jpg' style="width:100%;">
     </div>
-</div>
+</p>
 
 The next step is to separate high frequencies from **Harry** and low frequencies from **Voldemort**. We use a Gaussian Filter to achieve a softer final result.
 We need a Gaussian Low Pass Filter and a Gaussian High Pass Filter. If we present the standard derivation of low pass with $s$ and high pass with $r$, for this example, we used:
@@ -82,7 +82,7 @@ Here are the results for Gaussian High Pass and Gaussian Low Pass mask:
 <br/>
 <br/>
 
-<<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
 <img src='./images/Harry-highpass.jpg' style="width:40%">
 <img src='./images/Voldemort-lowpass.jpg' style="width:40%;">
 
@@ -103,9 +103,9 @@ $$Hybird_f = 1.3 \times Harry_f + Voldemort_f$$
 
 Here is the _Combined DFT_:
 
-<div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
         <img src='./images/Combined-dft.jpg' style="width:60%">
-</div>
+</p>
 
 If we transfer back this result to _Spatial Domain_, we should get a good result. I used numpy _ifft_ for this part.
 
@@ -113,9 +113,9 @@ Since every image has three channels called **RGB**, I split the channels, perfo
 
 Here is the final merged result:
 
-<div style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
+<p align='center' style="display: flex; align-items: flex-start; flex-direction: row; justify-content:space-evenly; width=100%;">
         <img src='./images/Hybrid.jpg' style="width:60%">
-</div>
+</p>
 
 If we look at it in different distances we will see a diiferent person in it.
 <br/>
